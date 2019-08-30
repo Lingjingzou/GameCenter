@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selectgamelevelbackground"
+    tools:context=".SlidingGame.SelectSlidingGameLevelActivity">
+
+    <EditText
+        android:id="@+id/UndoStepNum"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="25dp"
+        android:layout_height="44dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="190dp"
+        android:layout_marginBottom="11dp"
+        android:layout_toEndOf="@+id/SaveButton"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:singleLine="false"
+        android:text="3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/GameLevelBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="221dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="81dp"
+        android:max="2"
+        android:progress="0"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UndoStepNum" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="383dp"
+        android:layout_height="119dp"
+        android:layout_marginBottom="139dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/picture5"
+            android:layout_width="84dp"
+            android:layout_height="113dp"
+            android:layout_marginLeft="10dp"
+
+            android:background="@drawable/tile_5" />
+
+        <Button
+            android:id="@+id/picture6"
+            android:layout_width="84dp"
+            android:layout_height="113dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/tile_6"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/picture7"
+            android:layout_width="84dp"
+            android:layout_height="113dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/tile_7"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/picture8"
+            android:layout_width="84dp"
+            android:layout_height="113dp"
+            android:layout_marginLeft="10dp"
+            android:background="#FFFF"
+            android:text="DEFAULT"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="383dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="14dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GameLevelBar">
+
+        <Button
+            android:id="@+id/picture1"
+            android:layout_width="84dp"
+            android:layout_height="113dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/tile_1"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+        <Button
+            android:id="@+id/picture2"
+            android:layout_width="84dp"
+            android:layout_height="113dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/tile_2"
+
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <Button
+            android:id="@+id/picture3"
+            android:layout_width="84dp"
+            android:layout_height="113dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/tile_3"
+
+            app:layout_constraintHorizontal_bias="1.0" />
+
+
+        <Button
+            android:id="@+id/picture4"
+            android:layout_width="84dp"
+            android:layout_height="113dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/tile_4" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="123dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
+        android:text="SET UNDO LIMIT:"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toStartOf="@+id/UndoStepNum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="1dp"
+        android:text="3X3"
+        app:layout_constraintBottom_toTopOf="@+id/GameLevelBar"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="1dp"
+        android:text="4X4"
+        app:layout_constraintBottom_toTopOf="@+id/GameLevelBar"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="1dp"
+        android:text="5X5"
+        app:layout_constraintBottom_toTopOf="@+id/GameLevelBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"
+        android:text="LEVEL: "
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/upload_picture"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="279dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="97dp"
+        android:background="@drawable/buttonshape"
+        android:text="UPLOAD IMAGE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="#FFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+</android.support.constraint.ConstraintLayout>

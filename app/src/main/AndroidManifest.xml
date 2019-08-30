@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="gamecenter.gamecenter">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".EnterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SlidingGame.SelectSlidingGameLevelActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".SlidingGame.SlidingStartingActivity" />
+        <activity android:name=".SlidingGame.SlidingMainActivity" />
+        <activity android:name=".SnakeGame.SnakeMainActivity" />
+        <activity android:name=".SlidingGame.ContinuePreviousSlidingActivity" />
+        <activity android:name=".SelectGameActivity" />
+        <activity android:name=".SnakeGame.SnakeStartingActivity" />
+        <activity android:name=".SnakeGame.ContinuePreviousSnakeActivity" />
+        <activity android:name=".SnakeGame.SelectSnakeGameLevelActivity" />
+        <activity android:name=".MoleGame.MoleMainActivity" />
+        <activity android:name=".MoleGame.MoleStartingActivity" />
+        <activity android:name=".MoleGame.ContinuePreviousMoleActivity" />
+        <activity android:name=".MoleGame.SelectMoleGameLevelActivity" />
+        <activity android:name=".LoadSavedGameActivity" />
+        <activity android:name=".SaveGameActivity" />
+    </application>
+
+</manifest>

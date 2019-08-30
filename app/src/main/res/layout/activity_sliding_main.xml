@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sliding_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SlidingGame.SlidingMainActivity">
+
+
+    <gamecenter.gamecenter.SlidingGame.GestureDetectGridView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="443dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/ScoreBoard"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/sliding_save_back"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonshape"
+            android:text="Save Back"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/showOrigin"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:background="@drawable/buttonshape"
+            android:text="original picture"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/UndoButton"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:background="@drawable/buttonshape"
+            android:text="Undo"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

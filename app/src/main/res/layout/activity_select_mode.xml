@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoleGame.SelectModeActivity">
+
+    <Button
+        android:id="@+id/butArcade"
+        android:layout_width="128dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="307dp"
+        android:text="Arcade"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/butCountDown"
+        android:layout_width="137dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="123dp"
+        android:text="Cont Down"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butArcade" />
+</android.support.constraint.ConstraintLayout>

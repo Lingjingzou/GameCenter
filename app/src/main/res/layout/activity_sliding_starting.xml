@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SlidingGame.SlidingStartingActivity"
+    android:orientation="vertical"
+    android:id="@+id/sliding_starting"
+    android:background="@drawable/startingbackground">
+
+
+    <Button
+        android:id="@+id/GoButton"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="166dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/buttonshape"
+        android:text="New Game"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/LoadButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="166dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/SaveButton"
+        android:background="@drawable/buttonshape"
+        android:text="Load Saved Game"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/checkScoreHistory"
+        android:layout_width="166dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/LoadButton"
+        android:background="@drawable/buttonshape"
+        android:text="Score History"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/back_to_selectgame"
+        android:layout_width="166dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/buttonshape"
+        android:text="Back To Main Page"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="#FFFFFF"/>
+
+
+</LinearLayout>
